@@ -1,0 +1,96 @@
+Root level exception in OnGUI(): System.MissingMethodException: System.Collections.Generic.List`1<Verse.Pawn> Verse.MapPawns.get_ColonyMutants()
+[Ref D08EAC8]
+ at RimWorld.MainTabWindow_Work.get_Pawns () [0x00030] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - POSTFIX Luapo.ghoulWorkAble: Void GhoulWorkAble.HarmonyPatches:MainTabWindow_Work_pawns_PostFix(IEnumerable`1& __result)
+ at RimWorld.MainTabWindow_PawnTable.<CreateTable>b__17_0 () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.PawnTable.RecachePawns () [0x0000b] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.PawnTable.RecacheIfDirty () [0x00010] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.PawnTable.get_Size () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow_PawnTable.get_RequestedTabSize () [0x0000e] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow.get_InitialSize () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at Verse.Window.SetInitialSizeAndPosition () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow.SetInitialSizeAndPosition () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow_PawnTable.SetDirty () [0x0000b] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow_PawnTable.PostOpen () [0x0001a] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at Verse.WindowStack.Add (Verse.Window window) [0x0003a] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabsRoot.ToggleTab (RimWorld.MainButtonDef newTab, System.Boolean playSound) [0x0006b] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainButtonWorker_ToggleTab.Activate () [0x00005] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainButtonWorker.InterfaceTryActivate () [0x0008d] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainButtonWorker.DoButton (UnityEngine.Rect rect) [0x000ee] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainButtonsRoot.DoButtons () [0x00119] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainButtonsRoot.MainButtonsOnGUI () [0x0000e] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.UIRoot_Play.UIRootOnGUI () [0x00037] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at Verse.Root.OnGUI () [0x0003d] in <69945a8ed6c540cf90b578de735e0605>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Verse.Log:Error (string)
+Verse.Root:OnGUI ()
+
+Exception filling window for RimWorld.MainTabWindow_Work: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+[Ref CCFCA8FD]
+ at System.ThrowHelper.ThrowArgumentOutOfRangeException (System.ExceptionArgument argument, System.ExceptionResource resource) [0x00029] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+ at System.ThrowHelper.ThrowArgumentOutOfRangeException () [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+ at RimWorld.PawnTable.PawnTableOnGUI (UnityEngine.Vector2 position) [0x00446] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow_PawnTable.DoWindowContents (UnityEngine.Rect rect) [0x00020] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow_Work.DoWindowContents (UnityEngine.Rect rect) [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001a6] in <69945a8ed6c540cf90b578de735e0605>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Verse.Log:Error (string)
+Verse.Window:InnerWindowOnGUI (int)
+UnityEngine.GUI:CallWindowDelegate (UnityEngine.GUI/WindowFunction,int,int,UnityEngine.GUISkin,int,single,single,UnityEngine.GUIStyle)
+
+Exception filling window for RimWorld.MainTabWindow_Work: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+[Ref CCFCA8FD] Duplicate stacktrace, see ref for original
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Verse.Log:Error (string)
+Verse.Window:InnerWindowOnGUI (int)
+UnityEngine.GUI:CallWindowDelegate (UnityEngine.GUI/WindowFunction,int,int,UnityEngine.GUISkin,int,single,single,UnityEngine.GUIStyle)
+
+Root level exception in OnGUI(): System.MissingMethodException: System.Collections.Generic.List`1<Verse.Pawn> Verse.MapPawns.get_ColonyMutants()
+[Ref 98B7E317]
+ at RimWorld.MainTabWindow_Assign.get_Pawns () [0x0002f] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - POSTFIX Luapo.ghoulWorkAble: Void GhoulWorkAble.HarmonyPatches:MainTabWindow_Work_pawns_PostFix(IEnumerable`1& __result)
+ at RimWorld.MainTabWindow_PawnTable.<CreateTable>b__17_0 () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.PawnTable.RecachePawns () [0x0000b] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.PawnTable.RecacheIfDirty () [0x00010] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.PawnTable.get_Size () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow_PawnTable.get_RequestedTabSize () [0x0000e] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow.get_InitialSize () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at Verse.Window.SetInitialSizeAndPosition () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow.SetInitialSizeAndPosition () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow_PawnTable.SetDirty () [0x0000b] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow_PawnTable.PostOpen () [0x0001a] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at Verse.WindowStack.Add (Verse.Window window) [0x0003a] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabsRoot.ToggleTab (RimWorld.MainButtonDef newTab, System.Boolean playSound) [0x0006b] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainButtonWorker_ToggleTab.Activate () [0x00005] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainButtonWorker.InterfaceTryActivate () [0x0008d] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainButtonWorker.DoButton (UnityEngine.Rect rect) [0x000ee] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainButtonsRoot.DoButtons () [0x00119] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainButtonsRoot.MainButtonsOnGUI () [0x0000e] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.UIRoot_Play.UIRootOnGUI () [0x00037] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at Verse.Root.OnGUI () [0x0003d] in <69945a8ed6c540cf90b578de735e0605>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Verse.Log:Error (string)
+Verse.Root:OnGUI ()
+
+Exception filling window for RimWorld.MainTabWindow_Assign: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+[Ref 9F913097]
+ at System.ThrowHelper.ThrowArgumentOutOfRangeException (System.ExceptionArgument argument, System.ExceptionResource resource) [0x00029] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+ at System.ThrowHelper.ThrowArgumentOutOfRangeException () [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+ at RimWorld.PawnTable.PawnTableOnGUI (UnityEngine.Vector2 position) [0x00446] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow_PawnTable.DoWindowContents (UnityEngine.Rect rect) [0x00020] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001a6] in <69945a8ed6c540cf90b578de735e0605>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Verse.Log:Error (string)
+Verse.Window:InnerWindowOnGUI (int)
+UnityEngine.GUI:CallWindowDelegate (UnityEngine.GUI/WindowFunction,int,int,UnityEngine.GUISkin,int,single,single,UnityEngine.GUIStyle)
+
+Exception filling window for RimWorld.MainTabWindow_Assign: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+[Ref 9F913097] Duplicate stacktrace, see ref for original
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Verse.Log:Error (string)
+Verse.Window:InnerWindowOnGUI (int)
+UnityEngine.GUI:CallWindowDelegate (UnityEngine.GUI/WindowFunction,int,int,UnityEngine.GUISkin,int,single,single,UnityEngine.GUIStyle)

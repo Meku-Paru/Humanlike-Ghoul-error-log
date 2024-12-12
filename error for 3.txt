@@ -1,0 +1,235 @@
+Root level exception in OnGUI(): System.MissingMethodException: System.Collections.Generic.List`1<Verse.Pawn> Verse.MapPawns.get_ColonyMutants()
+[Ref B919EA2E]
+ at RimWorld.MainTabWindow_PawnTable.get_Pawns () [0x00017] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - POSTFIX Luapo.ghoulWorkAble.otherModPatch: Void GhoulWorkAble.OtherModPatches:PawnList_PostFix(MainTabWindow_PawnTable& __instance, IEnumerable`1& __result)
+ at RimWorld.MainTabWindow_PawnTable.<CreateTable>b__17_0 () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.PawnTable.RecachePawns () [0x0000b] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.PawnTable.RecacheIfDirty () [0x00040] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - PREFIX fluffy.worktab: Void WorkTab.PawnTable_RecacheIfDirty:Prefix(PawnTable __instance, Boolean& __state, PawnTableDef ___def)
+     - POSTFIX fluffy.worktab: Void WorkTab.PawnTable_RecacheIfDirty:Postfix(PawnTable __instance, Boolean __state)
+ at RimWorld.PawnTable.get_Size () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow_PawnTable.get_RequestedTabSize () [0x0000e] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow.get_InitialSize () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at Verse.Window.SetInitialSizeAndPosition () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - POSTFIX BetterInfoCard: Void BetterInfoCard.Dialog_InfoCard_Patch+Patch_Window_SetInitialSizeAndPosition:Postfix(Window __instance)
+ at RimWorld.MainTabWindow.SetInitialSizeAndPosition () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - POSTFIX GonDragon.UINotIncluded: Void UINotIncluded.MainTabWindowPatch:Postfix(Rect& ___windowRect, Window __instance)
+ at RimWorld.MainTabWindow_PawnTable.SetDirty () [0x0000b] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow_PawnTable.PostOpen () [0x0001d] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - POSTFIX VouLT.BetterPawnControl: Void BetterPawnControl.MainTabWindow_PawnTable_OnPostOpen:Postfix(MainTabWindow_PawnTable __instance)
+ at WorkTab.MainTabWindow_WorkTab.PostOpen () [0x00000] in <70eb3e9f7997405985409b13ff40e937>:0 
+ at Verse.WindowStack.Add (Verse.Window window) [0x0005b] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - PREFIX rwlayout.alpha2.internal: Boolean RWLayout.alpha2.WindowStackAddPatches:WindowStack_Add_prefix(Window window)
+     - POSTFIX SmashPhil.SmashTools: Void SmashTools.HighPriorityInputs:WindowAddedToStack(Window window)
+ at RimWorld.MainTabsRoot.ToggleTab (RimWorld.MainButtonDef newTab, System.Boolean playSound) [0x000a2] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - PREFIX Dubwise.DubsMintMenus: Void DubsMintMenus.HarmonyPatches+Patch_MainTabsRoot:Prefix(MainButtonDef& newTab)
+     - POSTFIX Troy_Alias.TacticalGroups: Void TacticalGroups.HarmonyPatches:EntriesDirty()
+ at RimWorld.MainButtonWorker_ToggleTab.Activate () [0x00005] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at UINotIncluded.Widget.Workers.Button_Worker.InterfaceTryActivate () [0x00098] in <bd3a7242c7964d67819ca1139d5abc4d>:0 
+ at UINotIncluded.Widget.Workers.Button_Worker.OnInteraction (UnityEngine.Rect rect) [0x0003c] in <bd3a7242c7964d67819ca1139d5abc4d>:0 
+ at UINotIncluded.Widget.Workers.Button_Worker.OnGUI (UnityEngine.Rect rect) [0x0001a] in <bd3a7242c7964d67819ca1139d5abc4d>:0 
+ at UINotIncluded.Widget.ExtendedToolbar.ExtendedToolbarOnGUI (System.Collections.Generic.List`1[T] elements, UnityEngine.Rect inRect) [0x00105] in <bd3a7242c7964d67819ca1139d5abc4d>:0 
+ at UINotIncluded.UIManager.BarsOnGUI () [0x00050] in <bd3a7242c7964d67819ca1139d5abc4d>:0 
+ at RimWorld.MainButtonsRoot.MainButtonsOnGUI () [0x00036] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - TRANSPILER GonDragon.UINotIncluded: IEnumerable`1 UINotIncluded.MainButtonsRoot_TranspilerPatch:Transpiler(ILGenerator gen, IEnumerable`1 instructions)
+     - PREFIX Dubwise.DubsMintMenus: Void DubsMintMenus.HarmonyPatches+Patch_MainButtonsOnGUI:Prefix()
+     - PREFIX net.funkyshit.worldedit_2_0: Boolean WorldEdit_2_0.Patches.MainMenu.WE_MainButtonsRoot_MainButtonsOnGUI:Prefix(ScenPart_PlayerFaction __instance)
+     - POSTFIX RIMMSqol: Void RIMMSqol.MainButtonsRoot_MainButtonsOnGUI:Postfix()
+     - POSTFIX GonDragon.UINotIncluded: Void UINotIncluded.MainButtonRootPatch:Postfix()
+ at RimWorld.UIRoot_Play.UIRootOnGUI () [0x00044] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - PREFIX SmashPhil.SmashTools: Void SmashTools.MainMenuKeyBindHandler:HandleKeyInputs()
+     - PREFIX Dubwise.PerformanceAnalyzer: Void Analyzer.H_KeyPresses:OnGUI()
+     - POSTFIX Krkr.RocketMan: Void RocketMan.KeyBinder:OnGUI()
+ at Verse.Root.OnGUI () [0x00046] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - TRANSPILER net.pardeike.rimworld.lib.harmony: IEnumerable`1 VisualExceptions.ExceptionsAndActivatorHandler:Transpiler(IEnumerable`1 instructions, MethodBase original)
+     - POSTFIX UnlimitedHugs.HugsLib: Void HugsLib.Patches.Root_OnGUI_Patch:OnGUIHookUnfiltered()
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Log.Error_Patch5 (string)
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Root.OnGUI_Patch1 (Verse.Root)
+
+Exception filling window for WorkTab.MainTabWindow_WorkTab: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+[Ref 6CFCE01F]
+ at System.ThrowHelper.ThrowArgumentOutOfRangeException (System.ExceptionArgument argument, System.ExceptionResource resource) [0x00029] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+ at System.ThrowHelper.ThrowArgumentOutOfRangeException () [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+ at WorkTab.PawnTable_PawnTableOnGUI.Prefix (RimWorld.PawnTable __instance, UnityEngine.Vector2 position, RimWorld.PawnTableDef ___def, UnityEngine.Vector2& ___scrollPosition) [0x006ec] in <70eb3e9f7997405985409b13ff40e937>:0 
+ at RimWorld.PawnTable.PawnTableOnGUI (UnityEngine.Vector2 position) [0x0001c] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - TRANSPILER mehni.rimworld.numbers: IEnumerable`1 Numbers.Numbers:MakeHeadersReOrderable(IEnumerable`1 instructions, ILGenerator generator)
+     - PREFIX Uuugggg.rimworld.TD_Enhancement_Pack.main: Void TD_Enhancement_Pack.PawnTableAddSelection:Prefix()
+     - PREFIX fluffy.worktab: Boolean WorkTab.PawnTable_PawnTableOnGUI:Prefix(PawnTable __instance, Vector2 position, PawnTableDef ___def, Vector2& ___scrollPosition)
+     - POSTFIX mehni.rimworld.numbers: Void Numbers.Numbers:ApplyColumnsRemoval(PawnTable __instance)
+     - POSTFIX Uuugggg.rimworld.TD_Enhancement_Pack.main: Void TD_Enhancement_Pack.PawnTableAddSelection:Postfix(List`1 ___cachedPawns)
+     - POSTFIX Troy_Alias.TacticalGroups: Void TacticalGroups.HarmonyPatches:PawnTableOnGUI(Vector2 position, PawnTableDef ___def, List`1 ___cachedColumnWidths, Vector2 ___cachedSize, Single ___cachedHeaderHeight, Single ___cachedHeightNoScrollbar)
+     - POSTFIX VouLT.BetterPawnControl: Void BetterPawnControl.Patches.PawnTable_PawnTableOnGUI:Postfix(PawnTable __instance, Vector2 position, PawnTableDef ___def)
+ at RimWorld.MainTabWindow_PawnTable.DoWindowContents (UnityEngine.Rect rect) [0x00020] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at WorkTab.MainTabWindow_WorkTab.DoWindowContents (UnityEngine.Rect rect) [0x0000e] in <70eb3e9f7997405985409b13ff40e937>:0 
+ at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - TRANSPILER net.pardeike.rimworld.lib.harmony: IEnumerable`1 VisualExceptions.ExceptionsAndActivatorHandler:Transpiler(IEnumerable`1 instructions, MethodBase original)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Log.Error_Patch5 (string)
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Window.InnerWindowOnGUI_Patch0 (Verse.Window,int)
+UnityEngine.GUI:CallWindowDelegate (UnityEngine.GUI/WindowFunction,int,int,UnityEngine.GUISkin,int,single,single,UnityEngine.GUIStyle)
+
+Exception filling window for WorkTab.MainTabWindow_WorkTab: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+[Ref 6CFCE01F] Duplicate stacktrace, see ref for original
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Log.Error_Patch5 (string)
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Window.InnerWindowOnGUI_Patch0 (Verse.Window,int)
+UnityEngine.GUI:CallWindowDelegate (UnityEngine.GUI/WindowFunction,int,int,UnityEngine.GUISkin,int,single,single,UnityEngine.GUIStyle)
+
+Root level exception in OnGUI(): System.MissingMethodException: System.Collections.Generic.List`1<Verse.Pawn> Verse.MapPawns.get_ColonyMutants()
+[Ref A0B6F4A9]
+ at RimWorld.MainTabWindow_PawnTable.get_Pawns () [0x00017] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - POSTFIX Luapo.ghoulWorkAble.otherModPatch: Void GhoulWorkAble.OtherModPatches:PawnList_PostFix(MainTabWindow_PawnTable& __instance, IEnumerable`1& __result)
+ at RimWorld.MainTabWindow_Schedule.get_Pawns () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow_PawnTable.<CreateTable>b__17_0 () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.PawnTable.RecachePawns () [0x0000b] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.PawnTable.RecacheIfDirty () [0x00040] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - PREFIX fluffy.worktab: Void WorkTab.PawnTable_RecacheIfDirty:Prefix(PawnTable __instance, Boolean& __state, PawnTableDef ___def)
+     - POSTFIX fluffy.worktab: Void WorkTab.PawnTable_RecacheIfDirty:Postfix(PawnTable __instance, Boolean __state)
+ at RimWorld.PawnTable.get_Size () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow_PawnTable.get_RequestedTabSize () [0x0000e] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow.get_InitialSize () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at Verse.Window.SetInitialSizeAndPosition () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - POSTFIX BetterInfoCard: Void BetterInfoCard.Dialog_InfoCard_Patch+Patch_Window_SetInitialSizeAndPosition:Postfix(Window __instance)
+ at RimWorld.MainTabWindow.SetInitialSizeAndPosition () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - POSTFIX GonDragon.UINotIncluded: Void UINotIncluded.MainTabWindowPatch:Postfix(Rect& ___windowRect, Window __instance)
+ at RimWorld.MainTabWindow_PawnTable.SetDirty () [0x0000b] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow_PawnTable.PostOpen () [0x0001d] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - POSTFIX VouLT.BetterPawnControl: Void BetterPawnControl.MainTabWindow_PawnTable_OnPostOpen:Postfix(MainTabWindow_PawnTable __instance)
+ at Verse.WindowStack.Add (Verse.Window window) [0x0005b] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - PREFIX rwlayout.alpha2.internal: Boolean RWLayout.alpha2.WindowStackAddPatches:WindowStack_Add_prefix(Window window)
+     - POSTFIX SmashPhil.SmashTools: Void SmashTools.HighPriorityInputs:WindowAddedToStack(Window window)
+ at RimWorld.MainTabsRoot.ToggleTab (RimWorld.MainButtonDef newTab, System.Boolean playSound) [0x000a2] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - PREFIX Dubwise.DubsMintMenus: Void DubsMintMenus.HarmonyPatches+Patch_MainTabsRoot:Prefix(MainButtonDef& newTab)
+     - POSTFIX Troy_Alias.TacticalGroups: Void TacticalGroups.HarmonyPatches:EntriesDirty()
+ at RimWorld.MainButtonWorker_ToggleTab.Activate () [0x00005] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at UINotIncluded.Widget.Workers.Button_Worker.InterfaceTryActivate () [0x00098] in <bd3a7242c7964d67819ca1139d5abc4d>:0 
+ at UINotIncluded.Widget.Workers.Button_Worker.OnInteraction (UnityEngine.Rect rect) [0x0003c] in <bd3a7242c7964d67819ca1139d5abc4d>:0 
+ at UINotIncluded.Widget.Workers.Button_Worker.OnGUI (UnityEngine.Rect rect) [0x0001a] in <bd3a7242c7964d67819ca1139d5abc4d>:0 
+ at UINotIncluded.Widget.ExtendedToolbar.ExtendedToolbarOnGUI (System.Collections.Generic.List`1[T] elements, UnityEngine.Rect inRect) [0x00105] in <bd3a7242c7964d67819ca1139d5abc4d>:0 
+ at UINotIncluded.UIManager.BarsOnGUI () [0x00050] in <bd3a7242c7964d67819ca1139d5abc4d>:0 
+ at RimWorld.MainButtonsRoot.MainButtonsOnGUI () [0x00036] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - TRANSPILER GonDragon.UINotIncluded: IEnumerable`1 UINotIncluded.MainButtonsRoot_TranspilerPatch:Transpiler(ILGenerator gen, IEnumerable`1 instructions)
+     - PREFIX Dubwise.DubsMintMenus: Void DubsMintMenus.HarmonyPatches+Patch_MainButtonsOnGUI:Prefix()
+     - PREFIX net.funkyshit.worldedit_2_0: Boolean WorldEdit_2_0.Patches.MainMenu.WE_MainButtonsRoot_MainButtonsOnGUI:Prefix(ScenPart_PlayerFaction __instance)
+     - POSTFIX RIMMSqol: Void RIMMSqol.MainButtonsRoot_MainButtonsOnGUI:Postfix()
+     - POSTFIX GonDragon.UINotIncluded: Void UINotIncluded.MainButtonRootPatch:Postfix()
+ at RimWorld.UIRoot_Play.UIRootOnGUI () [0x00044] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - PREFIX SmashPhil.SmashTools: Void SmashTools.MainMenuKeyBindHandler:HandleKeyInputs()
+     - PREFIX Dubwise.PerformanceAnalyzer: Void Analyzer.H_KeyPresses:OnGUI()
+     - POSTFIX Krkr.RocketMan: Void RocketMan.KeyBinder:OnGUI()
+ at Verse.Root.OnGUI () [0x00046] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - TRANSPILER net.pardeike.rimworld.lib.harmony: IEnumerable`1 VisualExceptions.ExceptionsAndActivatorHandler:Transpiler(IEnumerable`1 instructions, MethodBase original)
+     - POSTFIX UnlimitedHugs.HugsLib: Void HugsLib.Patches.Root_OnGUI_Patch:OnGUIHookUnfiltered()
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Log.Error_Patch5 (string)
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Root.OnGUI_Patch1 (Verse.Root)
+
+Exception filling window for RimWorld.MainTabWindow_Schedule: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+[Ref A6C3BFDE]
+ at System.ThrowHelper.ThrowArgumentOutOfRangeException (System.ExceptionArgument argument, System.ExceptionResource resource) [0x00029] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+ at System.ThrowHelper.ThrowArgumentOutOfRangeException () [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+ at RimWorld.PawnTable.PawnTableOnGUI (UnityEngine.Vector2 position) [0x00515] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - TRANSPILER mehni.rimworld.numbers: IEnumerable`1 Numbers.Numbers:MakeHeadersReOrderable(IEnumerable`1 instructions, ILGenerator generator)
+     - PREFIX Uuugggg.rimworld.TD_Enhancement_Pack.main: Void TD_Enhancement_Pack.PawnTableAddSelection:Prefix()
+     - PREFIX fluffy.worktab: Boolean WorkTab.PawnTable_PawnTableOnGUI:Prefix(PawnTable __instance, Vector2 position, PawnTableDef ___def, Vector2& ___scrollPosition)
+     - POSTFIX mehni.rimworld.numbers: Void Numbers.Numbers:ApplyColumnsRemoval(PawnTable __instance)
+     - POSTFIX Uuugggg.rimworld.TD_Enhancement_Pack.main: Void TD_Enhancement_Pack.PawnTableAddSelection:Postfix(List`1 ___cachedPawns)
+     - POSTFIX Troy_Alias.TacticalGroups: Void TacticalGroups.HarmonyPatches:PawnTableOnGUI(Vector2 position, PawnTableDef ___def, List`1 ___cachedColumnWidths, Vector2 ___cachedSize, Single ___cachedHeaderHeight, Single ___cachedHeightNoScrollbar)
+     - POSTFIX VouLT.BetterPawnControl: Void BetterPawnControl.Patches.PawnTable_PawnTableOnGUI:Postfix(PawnTable __instance, Vector2 position, PawnTableDef ___def)
+ at RimWorld.MainTabWindow_PawnTable.DoWindowContents (UnityEngine.Rect rect) [0x00020] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow_Schedule.DoWindowContents (UnityEngine.Rect fillRect) [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - TRANSPILER net.pardeike.rimworld.lib.harmony: IEnumerable`1 VisualExceptions.ExceptionsAndActivatorHandler:Transpiler(IEnumerable`1 instructions, MethodBase original)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Log.Error_Patch5 (string)
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Window.InnerWindowOnGUI_Patch0 (Verse.Window,int)
+UnityEngine.GUI:CallWindowDelegate (UnityEngine.GUI/WindowFunction,int,int,UnityEngine.GUISkin,int,single,single,UnityEngine.GUIStyle)
+
+Exception filling window for RimWorld.MainTabWindow_Schedule: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+[Ref A6C3BFDE] Duplicate stacktrace, see ref for original
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Log.Error_Patch5 (string)
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Window.InnerWindowOnGUI_Patch0 (Verse.Window,int)
+UnityEngine.GUI:CallWindowDelegate (UnityEngine.GUI/WindowFunction,int,int,UnityEngine.GUISkin,int,single,single,UnityEngine.GUIStyle)
+
+Root level exception in OnGUI(): System.MissingMethodException: System.Collections.Generic.List`1<Verse.Pawn> Verse.MapPawns.get_ColonyMutants()
+[Ref 73E88346]
+ at RimWorld.MainTabWindow_Assign.get_Pawns () [0x0002f] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - POSTFIX Luapo.ghoulWorkAble: Void GhoulWorkAble.HarmonyPatches:MainTabWindow_Work_pawns_PostFix(IEnumerable`1& __result)
+ at RimWorld.MainTabWindow_PawnTable.<CreateTable>b__17_0 () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.PawnTable.RecachePawns () [0x0000b] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.PawnTable.RecacheIfDirty () [0x00040] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - PREFIX fluffy.worktab: Void WorkTab.PawnTable_RecacheIfDirty:Prefix(PawnTable __instance, Boolean& __state, PawnTableDef ___def)
+     - POSTFIX fluffy.worktab: Void WorkTab.PawnTable_RecacheIfDirty:Postfix(PawnTable __instance, Boolean __state)
+ at RimWorld.PawnTable.get_Size () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow_PawnTable.get_RequestedTabSize () [0x0000e] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow.get_InitialSize () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at Verse.Window.SetInitialSizeAndPosition () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - POSTFIX BetterInfoCard: Void BetterInfoCard.Dialog_InfoCard_Patch+Patch_Window_SetInitialSizeAndPosition:Postfix(Window __instance)
+ at RimWorld.MainTabWindow.SetInitialSizeAndPosition () [0x00000] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - POSTFIX GonDragon.UINotIncluded: Void UINotIncluded.MainTabWindowPatch:Postfix(Rect& ___windowRect, Window __instance)
+ at RimWorld.MainTabWindow_PawnTable.SetDirty () [0x0000b] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at RimWorld.MainTabWindow_PawnTable.PostOpen () [0x0001d] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - POSTFIX VouLT.BetterPawnControl: Void BetterPawnControl.MainTabWindow_PawnTable_OnPostOpen:Postfix(MainTabWindow_PawnTable __instance)
+ at Verse.WindowStack.Add (Verse.Window window) [0x0005b] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - PREFIX rwlayout.alpha2.internal: Boolean RWLayout.alpha2.WindowStackAddPatches:WindowStack_Add_prefix(Window window)
+     - POSTFIX SmashPhil.SmashTools: Void SmashTools.HighPriorityInputs:WindowAddedToStack(Window window)
+ at RimWorld.MainTabsRoot.ToggleTab (RimWorld.MainButtonDef newTab, System.Boolean playSound) [0x000a2] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - PREFIX Dubwise.DubsMintMenus: Void DubsMintMenus.HarmonyPatches+Patch_MainTabsRoot:Prefix(MainButtonDef& newTab)
+     - POSTFIX Troy_Alias.TacticalGroups: Void TacticalGroups.HarmonyPatches:EntriesDirty()
+ at RimWorld.MainButtonWorker_ToggleTab.Activate () [0x00005] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at UINotIncluded.Widget.Workers.Button_Worker.InterfaceTryActivate () [0x00098] in <bd3a7242c7964d67819ca1139d5abc4d>:0 
+ at UINotIncluded.Widget.Workers.Button_Worker.OnInteraction (UnityEngine.Rect rect) [0x0003c] in <bd3a7242c7964d67819ca1139d5abc4d>:0 
+ at UINotIncluded.Widget.Workers.Button_Worker.OnGUI (UnityEngine.Rect rect) [0x0001a] in <bd3a7242c7964d67819ca1139d5abc4d>:0 
+ at UINotIncluded.Widget.ExtendedToolbar.ExtendedToolbarOnGUI (System.Collections.Generic.List`1[T] elements, UnityEngine.Rect inRect) [0x00105] in <bd3a7242c7964d67819ca1139d5abc4d>:0 
+ at UINotIncluded.UIManager.BarsOnGUI () [0x00050] in <bd3a7242c7964d67819ca1139d5abc4d>:0 
+ at RimWorld.MainButtonsRoot.MainButtonsOnGUI () [0x00036] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - TRANSPILER GonDragon.UINotIncluded: IEnumerable`1 UINotIncluded.MainButtonsRoot_TranspilerPatch:Transpiler(ILGenerator gen, IEnumerable`1 instructions)
+     - PREFIX Dubwise.DubsMintMenus: Void DubsMintMenus.HarmonyPatches+Patch_MainButtonsOnGUI:Prefix()
+     - PREFIX net.funkyshit.worldedit_2_0: Boolean WorldEdit_2_0.Patches.MainMenu.WE_MainButtonsRoot_MainButtonsOnGUI:Prefix(ScenPart_PlayerFaction __instance)
+     - POSTFIX RIMMSqol: Void RIMMSqol.MainButtonsRoot_MainButtonsOnGUI:Postfix()
+     - POSTFIX GonDragon.UINotIncluded: Void UINotIncluded.MainButtonRootPatch:Postfix()
+ at RimWorld.UIRoot_Play.UIRootOnGUI () [0x00044] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - PREFIX SmashPhil.SmashTools: Void SmashTools.MainMenuKeyBindHandler:HandleKeyInputs()
+     - PREFIX Dubwise.PerformanceAnalyzer: Void Analyzer.H_KeyPresses:OnGUI()
+     - POSTFIX Krkr.RocketMan: Void RocketMan.KeyBinder:OnGUI()
+ at Verse.Root.OnGUI () [0x00046] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - TRANSPILER net.pardeike.rimworld.lib.harmony: IEnumerable`1 VisualExceptions.ExceptionsAndActivatorHandler:Transpiler(IEnumerable`1 instructions, MethodBase original)
+     - POSTFIX UnlimitedHugs.HugsLib: Void HugsLib.Patches.Root_OnGUI_Patch:OnGUIHookUnfiltered()
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Log.Error_Patch5 (string)
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Root.OnGUI_Patch1 (Verse.Root)
+
+Exception filling window for RimWorld.MainTabWindow_Assign: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+[Ref ACDB41F5]
+ at System.ThrowHelper.ThrowArgumentOutOfRangeException (System.ExceptionArgument argument, System.ExceptionResource resource) [0x00029] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+ at System.ThrowHelper.ThrowArgumentOutOfRangeException () [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+ at RimWorld.PawnTable.PawnTableOnGUI (UnityEngine.Vector2 position) [0x00515] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - TRANSPILER mehni.rimworld.numbers: IEnumerable`1 Numbers.Numbers:MakeHeadersReOrderable(IEnumerable`1 instructions, ILGenerator generator)
+     - PREFIX Uuugggg.rimworld.TD_Enhancement_Pack.main: Void TD_Enhancement_Pack.PawnTableAddSelection:Prefix()
+     - PREFIX fluffy.worktab: Boolean WorkTab.PawnTable_PawnTableOnGUI:Prefix(PawnTable __instance, Vector2 position, PawnTableDef ___def, Vector2& ___scrollPosition)
+     - POSTFIX mehni.rimworld.numbers: Void Numbers.Numbers:ApplyColumnsRemoval(PawnTable __instance)
+     - POSTFIX Uuugggg.rimworld.TD_Enhancement_Pack.main: Void TD_Enhancement_Pack.PawnTableAddSelection:Postfix(List`1 ___cachedPawns)
+     - POSTFIX Troy_Alias.TacticalGroups: Void TacticalGroups.HarmonyPatches:PawnTableOnGUI(Vector2 position, PawnTableDef ___def, List`1 ___cachedColumnWidths, Vector2 ___cachedSize, Single ___cachedHeaderHeight, Single ___cachedHeightNoScrollbar)
+     - POSTFIX VouLT.BetterPawnControl: Void BetterPawnControl.Patches.PawnTable_PawnTableOnGUI:Postfix(PawnTable __instance, Vector2 position, PawnTableDef ___def)
+ at RimWorld.MainTabWindow_PawnTable.DoWindowContents (UnityEngine.Rect rect) [0x00020] in <69945a8ed6c540cf90b578de735e0605>:0 
+ at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <69945a8ed6c540cf90b578de735e0605>:0 
+     - TRANSPILER net.pardeike.rimworld.lib.harmony: IEnumerable`1 VisualExceptions.ExceptionsAndActivatorHandler:Transpiler(IEnumerable`1 instructions, MethodBase original)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Log.Error_Patch5 (string)
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Window.InnerWindowOnGUI_Patch0 (Verse.Window,int)
+UnityEngine.GUI:CallWindowDelegate (UnityEngine.GUI/WindowFunction,int,int,UnityEngine.GUISkin,int,single,single,UnityEngine.GUIStyle)
+
+Exception filling window for RimWorld.MainTabWindow_Assign: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+[Ref ACDB41F5] Duplicate stacktrace, see ref for original
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Log.Error_Patch5 (string)
+(wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition:Verse.Window.InnerWindowOnGUI_Patch0 (Verse.Window,int)
+UnityEngine.GUI:CallWindowDelegate (UnityEngine.GUI/WindowFunction,int,int,UnityEngine.GUISkin,int,single,single,UnityEngine.GUIStyle)
